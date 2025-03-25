@@ -8,6 +8,7 @@ import { DualCTA } from "@/components/dual-cta"
 import { Testimonials } from "@/components/testimonials"
 import { ExperienceImpact } from "@/components/experience-impact"
 import { AboutSection } from "@/components/about-section"
+import { TrustedBy } from "@/components/trusted-by"
 import { CaseStudyIntro } from "@/components/case-study-intro"
 import { AnimatedSection } from "@/components/animated-section"
 import { ArrowRight, Globe } from "lucide-react"
@@ -53,6 +54,8 @@ export default function Home() {
         </div>
       </section>
 
+      <TrustedBy />
+
       {/* How We Work - Dual CTA Section */}
       <AnimatedSection>
         <DualCTA secondaryButtonLink="/services#how-we-work" />
@@ -94,8 +97,10 @@ export default function Home() {
                   </div>
                   <div>
                     <Button className="group flex items-center gap-2 bg-yellow-300 text-slate-900 hover:bg-yellow-400">
-                      View Case Study
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <Link href="/works/noted-pilot" className="flex items-center gap-2">
+                        View Case Study
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
                     </Button>
                   </div>
                 </div>
@@ -227,4 +232,3 @@ export default function Home() {
     </div>
   )
 }
-

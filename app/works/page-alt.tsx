@@ -3,7 +3,7 @@ import { Separator } from "@/components/decorative/separators"
 import { Footer } from "@/components/footer"
 import { ProjectCard } from "@/components/project-card"
 import { Button } from "@/components/ui/button"
-import { Globe, Users, Home } from "lucide-react"
+import { Globe, Users, Home, Tool } from "lucide-react"
 import Link from "next/link"
 
 export default function WorksPageAlt() {
@@ -75,6 +75,7 @@ export default function WorksPageAlt() {
               color="yellow"
               reversed={true}
               borderVariant="zeus"
+              href="/works/life-capsule"
             />
 
             <Separator variant="olympus" />
@@ -89,6 +90,7 @@ export default function WorksPageAlt() {
               tagline="Trust and reviews for East Africa"
               color="green"
               borderVariant="olympus"
+              href="/works/noted-pilot"
             />
 
             <Separator variant="greek" />
@@ -96,7 +98,7 @@ export default function WorksPageAlt() {
             {/* Project 3 */}
             <ProjectCard
               title="Cookie Club"
-              location="Kigali, Rwanda"
+              location="Kampala, Uganda"
               description="A delightful e-commerce platform for a premium bakery specializing in artisanal cookies and sweet treats. Built with the sweetness of Hestia's hearth."
               technologies={["Next.js", "Stripe", "Sanity CMS"]}
               icon={<Home className="w-full h-full" />}
@@ -104,6 +106,7 @@ export default function WorksPageAlt() {
               color="yellow"
               reversed={true}
               borderVariant="olympus"
+              href="/works/cookie-club"
             />
 
             <Separator variant="zeus" />
@@ -114,11 +117,11 @@ export default function WorksPageAlt() {
               location="United Kingdom"
               description="A platform connecting UK homeowners with qualified trade professionals, streamlining the process of finding reliable service providers. Crafted with the skill of Hephaestus."
               technologies={["React", "Node.js", "MongoDB"]}
-              icon={<Home className="w-full h-full" />}
-              tagline="Connecting homes with professionals"
-              color="yellow"
-              reversed={true}
-              borderVariant="scroll"
+              icon={<Tool className="w-full h-full" />}
+              tagline="Connecting homes with skilled trades"
+              color="green"
+              borderVariant="olympus"
+              href="/works/tradehub24"
             />
           </div>
         </div>
