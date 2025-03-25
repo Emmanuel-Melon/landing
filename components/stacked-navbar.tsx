@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { GreekSymbol } from "./decorative/greek-symbol"
 import { ThemeToggle } from "./theme-toggle"
-import { Github, Twitter, Linkedin, Mail, Home, Info, Briefcase, FolderKanban, FileText, Phone } from "lucide-react"
+import { Github, Twitter, Linkedin, Mail, AppWindow, Info, Briefcase, FolderKanban, FileText, Phone } from "lucide-react"
 
 interface StackedNavbarProps {
   currentPage: string
@@ -9,10 +9,9 @@ interface StackedNavbarProps {
 
 export function StackedNavbar({ currentPage }: StackedNavbarProps) {
   const navItems = [
-    { name: "HOME", path: "/", icon: <Home className="w-4 h-4" /> },
     { name: "ABOUT", path: "/about", icon: <Info className="w-4 h-4" /> },
-    { name: "SERVICES", path: "/services", icon: <Briefcase className="w-4 h-4" /> },
-    { name: "WORKS", path: "/works", icon: <FolderKanban className="w-4 h-4" /> },
+    { name: "SERVICES", path: "/services", icon: <FolderKanban className="w-4 h-4" /> },
+    { name: "WORKS", path: "/works", icon: <AppWindow className="w-4 h-4" /> },
     { name: "CONTACT", path: "/contact", icon: <Phone className="w-4 h-4" /> },
   ]
 
@@ -29,8 +28,8 @@ export function StackedNavbar({ currentPage }: StackedNavbarProps) {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <GreekSymbol symbol="Ν" size="sm" animated />
-            <span className="text-2xl font-serif text-white">VOLTERRA</span>
+            <GreekSymbol symbol="V" size="sm" animated />
+            <Link href="/" className="text-2xl font-serif text-white">VOLTERRA</Link>
           </div>
           <div className="flex items-center gap-6">
             <div className="flex gap-6 text-slate-300">

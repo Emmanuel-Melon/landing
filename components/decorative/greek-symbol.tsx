@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 
 interface GreekSymbolProps {
   className?: string
-  symbol?: "Ν" | "Ω" | "Δ" | "Φ" | "Ψ"
+  symbol?: "Ν" | "Ω" | "Δ" | "Φ" | "Ψ" | "V"
   size?: "sm" | "md" | "lg"
   animated?: boolean
 }
