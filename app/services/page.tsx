@@ -34,8 +34,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* Services List */}
       <AnimatedSection>
         <ServicesList

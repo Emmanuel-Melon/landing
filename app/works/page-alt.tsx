@@ -60,8 +60,6 @@ export default function WorksPageAlt() {
         </div>
       </section>
 
-      <Separator variant="lightning" />
-
       {/* Featured Projects */}
       <section className="py-24">
         <div className="container mx-auto px-4">

@@ -35,8 +35,6 @@ export default function WorksPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* Experience & Impact Section */}
       <ExperienceImpact
         title="Our Portfolio Impact"

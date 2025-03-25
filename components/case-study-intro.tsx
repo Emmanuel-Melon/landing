@@ -6,13 +6,11 @@ import { motion, useInView, useAnimation } from "framer-motion"
 interface CaseStudyIntroProps {
   title?: string
   subtitle?: string
-  description?: string
 }
 
 export function CaseStudyIntro({
   title = "Featured Case Study",
-  subtitle = "How we helped NotedPilot transform East African business reviews",
-  description = "NotedPilot needed a TrustPilot-inspired platform tailored specifically for East African businesses. We designed and built a scalable solution that enables customer reviews and builds trust in the regional marketplace.",
+  subtitle = "How we helped NotedPilot transform East African business reviews"
 }: CaseStudyIntroProps) {
   const controls = useAnimation()
   const ref = useRef(null)
@@ -66,9 +64,6 @@ export function CaseStudyIntro({
             {subtitle}
           </motion.h3>
 
-          <motion.p variants={itemVariants} className="text-slate-300 text-lg">
-            {description}
-          </motion.p>
         </motion.div>
       </div>
     </section>

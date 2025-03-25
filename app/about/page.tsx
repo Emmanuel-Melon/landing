@@ -32,8 +32,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* About Content */}
       <section className="py-24">
         <div className="container mx-auto px-4">

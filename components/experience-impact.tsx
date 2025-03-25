@@ -20,9 +20,9 @@ export function ExperienceImpact({
   description = "We've had the privilege of working with amazing companies and teams, contributing to impactful projects and delivering exceptional software solutions.",
   badges = ["Since 2022", "3 Countries"],
   stats = [
-    { label: "Years of Experience", value: "2+" },
-    { label: "Projects Delivered", value: "8+" },
-    { label: "Satisfied Clients", value: "5+" },
+    { label: "Years of Experience", value: "5+" },
+    { label: "Projects Delivered", value: "4" },
+    { label: "Satisfied Clients", value: "3" },
   ],
 }: ExperienceImpactProps) {
   const controls = useAnimation()

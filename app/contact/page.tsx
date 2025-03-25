@@ -32,8 +32,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* Contact Form */}
       <section className="py-24">
         <div className="container mx-auto px-4">

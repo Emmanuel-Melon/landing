@@ -53,8 +53,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* How We Work - Dual CTA Section */}
       <AnimatedSection>
         <DualCTA secondaryButtonLink="/services#how-we-work" />
@@ -69,8 +67,6 @@ export default function Home() {
 
       {/* Experience & Impact Section */}
       <ExperienceImpact />
-
-      <Separator variant="olympus" />
 
       {/* Case Study Intro */}
       <CaseStudyIntro />

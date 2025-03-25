@@ -61,8 +61,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* Blog Posts */}
       <section className="py-24">
         <div className="container mx-auto px-4">

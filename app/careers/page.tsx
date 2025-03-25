@@ -32,8 +32,6 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* Why Join Us */}
       <section className="py-24">
         <div className="container mx-auto px-4">
