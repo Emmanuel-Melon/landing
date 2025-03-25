@@ -22,7 +22,7 @@ export default function Home() {
       <StackedNavbar currentPage="HOME" />
 
       {/* Hero Section - simplified messaging */}
-      <section className="relative overflow-hidden border-b border-slate-700/50">
+      <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAwIDAgTDIwMCAxMDAgTDEwMCAyMDAgTDAgMTAwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyMzQsIDE3OSwgOCwgMC4xKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+')] opacity-20" />
         <div className="container mx-auto px-4 py-24">
           <div className="max-w-4xl mx-auto">

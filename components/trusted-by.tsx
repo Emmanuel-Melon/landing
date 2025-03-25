@@ -31,7 +31,7 @@ export function TrustedBy() {
   }
 
   return (
-    <section className="py-12 border-b border-slate-700/50">
+    <section className="py-12">
       <div className="container mx-auto px-4">
         <motion.div
           initial="hidden"
