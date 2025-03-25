@@ -53,16 +53,11 @@ export function AboutSection() {
                 About <span className="text-yellow-300">Volterra</span>
               </motion.h2>
 
-              <motion.p variants={itemVariants} className="text-slate-300 text-lg mb-6">
+              <motion.p variants={itemVariants} className="text-slate-300 text-lg mb-8">
                 Founded in 2022, Volterra is a dynamic software agency delivering exceptional solutions from the heart
                 of Africa to clients worldwide. We combine technical excellence with creative energy to build powerful
-                software that solves complex problems.
-              </motion.p>
-
-              <motion.p variants={itemVariants} className="text-slate-300 text-lg mb-8">
-                Our team brings together expertise in distributed systems, location-based applications, and innovative
-                SaaS solutions. We believe in the transformative power of technology and are committed to helping our
-                clients achieve their digital ambitions.
+                software that solves complex problems. Our team brings together expertise in distributed systems,
+                location-based applications, and innovative SaaS solutions.
               </motion.p>
 
               <motion.div variants={itemVariants}>
@@ -75,33 +70,17 @@ export function AboutSection() {
               </motion.div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8">
-              {[
-                {
-                  title: "Our Mission",
-                  description:
-                    "To deliver exceptional software solutions that empower businesses to achieve their goals and transform their industries.",
-                },
-                {
-                  title: "Our Vision",
-                  description:
-                    "To be the leading software agency in East Africa, known for technical excellence, innovation, and client satisfaction.",
-                },
-                {
-                  title: "Our Values",
-                  description:
-                    "Technical excellence, creative energy, global perspective, and a commitment to delivering exceptional results.",
-                },
-              ].map((item, index) => (
-                <motion.div key={index} variants={itemVariants} className="relative p-6">
-                  <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-300/30"></div>
-                  <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-yellow-300/30"></div>
-                  <div className="bg-slate-900/80 p-6">
-                    <h3 className="text-xl font-serif text-white mb-2">{item.title}</h3>
-                    <p className="text-slate-300">{item.description}</p>
+            <div className="relative">
+              <motion.div variants={itemVariants} className="aspect-w-4 aspect-h-3 bg-slate-800 rounded-lg overflow-hidden">
+                <div className="flex items-center justify-center p-8">
+                  <div className="relative z-10 bg-slate-900/80 p-8 rounded-lg border border-yellow-300/20">
+                    <div className="text-center">
+                      <h3 className="text-2xl font-serif text-white mb-2">Forging Digital Excellence</h3>
+                      <p className="text-slate-300">From Kigali to the World</p>
+                    </div>
                   </div>
-                </motion.div>
-              ))}
+                </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
@@ -109,4 +88,3 @@ export function AboutSection() {
     </section>
   )
 }
-

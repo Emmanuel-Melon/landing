@@ -95,6 +95,21 @@ export default function WorksPageAlt() {
 
             {/* Project 3 */}
             <ProjectCard
+              title="Cookie Club"
+              location="Kigali, Rwanda"
+              description="A delightful e-commerce platform for a premium bakery specializing in artisanal cookies and sweet treats. Built with the sweetness of Hestia's hearth."
+              technologies={["Next.js", "Stripe", "Sanity CMS"]}
+              icon={<Home className="w-full h-full" />}
+              tagline="Sweet treats delivered to your door"
+              color="yellow"
+              reversed={true}
+              borderVariant="olympus"
+            />
+
+            <Separator variant="zeus" />
+
+            {/* Project 4 */}
+            <ProjectCard
               title="TradeHub24"
               location="United Kingdom"
               description="A platform connecting UK homeowners with qualified trade professionals, streamlining the process of finding reliable service providers. Crafted with the skill of Hephaestus."
@@ -137,4 +152,3 @@ export default function WorksPageAlt() {
     </div>
   )
 }
-
