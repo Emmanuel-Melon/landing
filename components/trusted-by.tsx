@@ -1,13 +1,11 @@
 "use client"
-
 import { motion } from "framer-motion"
-
 const clients = [
   { name: "Life Capsule", location: "Utah, USA" },
-  { name: "NotePilot", location: "East Africa" },
-  { name: "TradeHub24", location: "London, United Kingdom" },
+  { name: "NotedPilot", location: "East Africa" },
+  { name: "TradeHub24", location: "London, UK" },
   { name: "Cookie Club", location: "Kampala, Uganda" },
-  { name: "Grace Estates", location: "Kampala, Uganda"}
+  { name: "Grace Estates", location: "Kampala, Uganda" },
 ]
 
 export function TrustedBy() {
@@ -32,7 +30,7 @@ export function TrustedBy() {
   }
 
   return (
-    <section className="py-12">
+    <section className="py-12 border-b border-slate-700/50">
       <div className="container mx-auto px-4">
         <motion.div
           initial="hidden"
@@ -48,15 +46,11 @@ export function TrustedBy() {
             Trusted By Innovative Companies
           </motion.h2>
 
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center"
-          >
-            {clients.map((client) => (
-              <div
-                key={client.name}
-                className="text-center group cursor-default"
-              >
+          <motion.div variants={itemVariants} className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+            {clients.map((client, index) => (
+              <div key={client.name} className="text-center group cursor-default relative p-4">
+                <div className="absolute top-0 left-0 w-8 h-8 border-l border-t border-yellow-300/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute bottom-0 right-0 w-8 h-8 border-r border-b border-yellow-300/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <h3 className="text-xl font-serif text-white mb-1 group-hover:text-yellow-300 transition-colors">
                   {client.name}
                 </h3>
@@ -69,3 +63,4 @@ export function TrustedBy() {
     </section>
   )
 }
+
