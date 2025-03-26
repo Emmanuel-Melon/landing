@@ -14,8 +14,6 @@ interface DualCTAProps {
   rightIcon?: React.ReactNode
   primaryButtonText?: string
   primaryButtonLink?: string
-  secondaryButtonText?: string
-  secondaryButtonLink?: string
 }
 
 export function DualCTA({
@@ -28,18 +26,18 @@ export function DualCTA({
   rightIcon = <Cpu className="w-12 h-12 text-yellow-300 mb-6" />,
   primaryButtonText = "Start Your Project",
   primaryButtonLink = "/contact",
-  secondaryButtonText = "Learn More",
-  secondaryButtonLink = "/services",
 }: DualCTAProps) {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-300/5 to-transparent opacity-50"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-serif text-white mb-16 text-center">{title}</h2>
-
+        <div className="max-w-6xl mx-auto space-y-8">
+          <div className="text-center space-y-4">
+          <h2 className="text-4xl font-serif text-white">{title}</h2>
+          <p>At Volterra, we embrace creativity and communication</p>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative p-10">
+            <div className="relative p-8">
               <div className="absolute top-0 left-0 w-24 h-24 border-l-2 border-t-2 border-yellow-300/30"></div>
               <div className="absolute bottom-0 right-0 w-24 h-24 border-r-2 border-b-2 border-yellow-300/30"></div>
               <div className="bg-slate-900/80 p-12 flex flex-col items-center text-center h-full">
@@ -49,7 +47,7 @@ export function DualCTA({
               </div>
             </div>
 
-            <div className="relative p-10">
+            <div className="relative p-8">
               <div className="absolute top-0 left-0 w-24 h-24 border-l-2 border-t-2 border-yellow-300/30"></div>
               <div className="absolute bottom-0 right-0 w-24 h-24 border-r-2 border-b-2 border-yellow-300/30"></div>
               <div className="bg-slate-900/80 p-12 flex flex-col items-center text-center h-full">
@@ -66,13 +64,6 @@ export function DualCTA({
                 {primaryButtonText}
                 <ArrowRight className="w-4 h-4" />
               </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-yellow-300 text-white hover:bg-yellow-300/10 hover:text-yellow-300"
-            >
-              <Link href={secondaryButtonLink}>{secondaryButtonText}</Link>
             </Button>
           </div>
         </div>

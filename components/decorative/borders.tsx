@@ -9,7 +9,7 @@ interface BorderProps {
 
 export function Border({ className, children, variant = "zeus" }: BorderProps) {
   return (
-    <div className={cn("relative p-10", className)}>
+    <div className={cn("relative p-8", className)}>
       {variant === "zeus" && (
         <>
           <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-300/30" />

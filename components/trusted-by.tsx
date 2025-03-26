@@ -4,9 +4,10 @@ import { motion } from "framer-motion"
 
 const clients = [
   { name: "Life Capsule", location: "Utah, USA" },
-  { name: "NotedPilot", location: "East Africa" },
-  { name: "TradeHub24", location: "United Kingdom" },
+  { name: "NotePilot", location: "East Africa" },
+  { name: "TradeHub24", location: "London, United Kingdom" },
   { name: "Cookie Club", location: "Kampala, Uganda" },
+  { name: "Grace Estates", location: "Kampala, Uganda"}
 ]
 
 export function TrustedBy() {

@@ -27,7 +27,7 @@ export function StackedNavbar({ currentPage }: StackedNavbarProps) {
       {/* Top row - Main navigation */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <GreekSymbol symbol="V" size="sm" animated />
             <Link href="/" className="text-2xl font-serif text-white">VOLTERRA</Link>
           </div>
@@ -52,15 +52,15 @@ export function StackedNavbar({ currentPage }: StackedNavbarProps) {
       </div>
 
       {/* Bottom row - Secondary links and social links */}
-      <div className="bg-slate-900/50 border-t border-slate-700/30">
-        <div className="container mx-auto px-4 py-2">
+      <div className="border-t border-slate-700/30">
+        <div className="container mx-auto p-2">
           <div className="flex justify-between items-center">
             <div className="flex gap-4 text-slate-400">
-              <Link href="/blog" className="hover:text-yellow-300 transition-colors flex items-center gap-1">
+              <Link href="/blog" className="hover:text-yellow-300 transition-colors flex items-center gap-2">
                 <FileText className="w-4 h-4" />
                 BLOG
               </Link>
-              <Link href="/careers" className="hover:text-yellow-300 transition-colors flex items-center gap-1">
+              <Link href="/careers" className="hover:text-yellow-300 transition-colors flex items-center gap-2">
                 <Briefcase className="w-4 h-4" />
                 CAREERS
               </Link>
@@ -70,7 +70,7 @@ export function StackedNavbar({ currentPage }: StackedNavbarProps) {
                 <a
                   key={index}
                   href={link.href}
-                  className="text-slate-400 hover:text-yellow-300 transition-colors"
+                  className="text-slate-400 hover:text-yellow-300 transition-colors p-2 rounded-full border border-yellow-300/30"
                   aria-label={link.label}
                 >
                   {link.icon}

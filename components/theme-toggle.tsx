@@ -30,7 +30,7 @@ export function ThemeToggle() {
       variant="outline"
       size="icon"
       onClick={toggleTheme}
-      className="border-yellow-300/30 text-yellow-300 hover:bg-yellow-300/10"
+      className="border-yellow-300/30 text-yellow-300 hover:bg-yellow-300/10 rounded-full"
     >
       {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
       <span className="sr-only">Toggle theme</span>

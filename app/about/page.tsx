@@ -107,7 +107,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-12">
-              <div className="relative p-8">
+              <div className="relative p-4">
                 <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-300/30"></div>
                 <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-yellow-300/30"></div>
                 <div className="bg-slate-900/80 p-6 rounded-lg">
@@ -118,7 +118,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="relative p-8">
+              <div className="relative p-4">
                 <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-300/30"></div>
                 <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-yellow-300/30"></div>
                 <div className="bg-slate-900/80 p-6 rounded-lg">
@@ -129,7 +129,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="relative p-8">
+              <div className="relative p-4">
                 <div className="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-yellow-300/30"></div>
                 <div className="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-yellow-300/30"></div>
                 <div className="bg-slate-900/80 p-6 rounded-lg">
@@ -139,43 +139,6 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Separator variant="olympus" />
-
-      {/* Values Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-serif text-white mb-12 text-center">Our Values</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Technical Excellence",
-                  description:
-                    "We pride ourselves on delivering high-quality, well-architected solutions that stand the test of time.",
-                },
-                {
-                  title: "Creative Energy",
-                  description:
-                    "We approach each project with fresh thinking and innovative ideas to solve complex problems.",
-                },
-                {
-                  title: "Global Perspective",
-                  description:
-                    "Our diverse team brings a global mindset to every project, understanding different markets and cultures.",
-                },
-              ].map((value, index) => (
-                <Border key={index} variant="scroll" className="h-full">
-                  <div className="p-6 space-y-4 h-full">
-                    <h3 className="text-xl font-serif text-white">{value.title}</h3>
-                    <p className="text-slate-300">{value.description}</p>
-                  </div>
-                </Border>
-              ))}
             </div>
           </div>
         </div>

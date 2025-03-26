@@ -81,7 +81,7 @@ export default function WorksPage() {
                   </div>
                 </div>
                 <div className="order-1 md:order-2">
-                  <Border variant="zeus">
+                  <Border variant="scroll">
                     <div className="aspect-w-4 aspect-h-3 bg-slate-800 rounded-lg overflow-hidden">
                       <div className="flex items-center justify-center p-8">
                         <div className="relative">
@@ -104,7 +104,7 @@ export default function WorksPage() {
               {/* Project 2 */}
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <Border variant="olympus">
+                  <Border variant="scroll">
                     <div className="aspect-w-4 aspect-h-3 bg-slate-800 rounded-lg overflow-hidden">
                       <div className="flex items-center justify-center p-8">
                         <div className="relative">

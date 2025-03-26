@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone, Building2 } from "lucide-react"
 import { StackedNavbar } from "@/components/stacked-navbar"
 
 export default function ContactPage() {
@@ -39,7 +39,7 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-16">
               <div>
                 <h2 className="text-3xl font-serif text-white mb-8">Send Us a Message</h2>
-                <Border variant="zeus" className="p-8">
+                <Border variant="scroll" className="p-12">
                   <form className="space-y-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-white">
@@ -74,8 +74,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <h2 className="text-3xl font-serif text-white mb-8">Contact Information</h2>
-                <div className="space-y-8">
-                  <Border variant="scroll" className="p-6">
+                <div className="space-y-12">
+                  <Border variant="olympus" className="p-6">
                     <div className="flex items-start gap-4">
                       <Mail className="w-6 h-6 text-yellow-300 mt-1" />
                       <div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                   </Border>
-                  <Border variant="scroll" className="p-6">
+                  <Border variant="olympus" className="p-6">
                     <div className="flex items-start gap-4">
                       <MapPin className="w-6 h-6 text-yellow-300 mt-1" />
                       <div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                   </Border>
-                  <Border variant="scroll" className="p-6">
+                  <Border variant="olympus" className="p-6">
                     <div className="flex items-start gap-4">
                       <Phone className="w-6 h-6 text-yellow-300 mt-1" />
                       <div>
@@ -119,14 +119,24 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-serif text-white mb-8 text-center">Find Us</h2>
-            <Border variant="zeus">
-              <div className="aspect-w-16 aspect-h-9 bg-slate-800 rounded-lg overflow-hidden">
+            <Border variant="olympus">
+              <div className="flex items-center justify-around">
+              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                <div className="flex items-center justify-center text-slate-600">
+                  <div className="text-center">
+                    <Building2 className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
+                    <p className="text-white">Norssken House</p>
+                  </div>
+                </div>
+              </div>
+              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                 <div className="flex items-center justify-center text-slate-600">
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-yellow-300 mx-auto mb-4" />
                     <p className="text-white">Kigali, Rwanda</p>
                   </div>
                 </div>
+              </div>
               </div>
             </Border>
           </div>

@@ -12,7 +12,7 @@ export function Footer() {
             <p className="text-slate-300">
               Powering the future of software development with divine engineering solutions.
             </p>
-            <GreekSymbol symbol="Ν" size="md" animated />
+            <GreekSymbol symbol="V" size="md" animated />
           </div>
           <div className="space-y-4">
             <h3 className="text-xl font-serif text-white">Contact</h3>
@@ -37,7 +37,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <Separator variant="greek" className="my-8" />
+        <Separator variant="lightning-line" className="my-8" />
         <div className="text-center text-slate-400">
           <p>© 2024 Volterra. Blessed by Zeus himself.</p>
         </div>
