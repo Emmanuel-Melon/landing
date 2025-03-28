@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 const clients = [
   { name: "Life Capsule", location: "Utah, USA" },
-  { name: "NotedPilot", location: "East Africa" },
+  { name: "NotePilot", location: "East Africa" },
   { name: "TradeHub24", location: "London, UK" },
   { name: "Cookie Club", location: "Kampala, Uganda" },
   { name: "Grace Estates", location: "Kampala, Uganda" },
@@ -30,14 +30,14 @@ export function TrustedBy() {
   }
 
   return (
-    <section className="py-12 border-b border-slate-700/50">
+    <section className="py-12 bg-transparent">
       <div className="container mx-auto px-4">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
-          className="max-w-6xl mx-auto"
+          className="max-w-7xl mx-auto"
         >
           <motion.h2
             variants={itemVariants}

@@ -57,15 +57,6 @@ export function DualCTA({
               </div>
             </div>
           </div>
-
-          <div className="flex justify-center gap-4 mt-12">
-            <Button size="lg" className="bg-yellow-300 text-slate-900 hover:bg-yellow-400">
-              <Link href={primaryButtonLink} className="flex items-center gap-2">
-                {primaryButtonText}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </Button>
-          </div>
         </div>
       </div>
     </section>

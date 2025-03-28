@@ -2,24 +2,24 @@ import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { Playfair_Display, Inter } from "next/font/google"
+import { Cinzel, Spectral } from "next/font/google"
 
-const playfair = Playfair_Display({
+const cinzel = Cinzel({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-cinzel",
   display: "swap",
 })
 
-const inter = Inter({
+const spectral = Spectral({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-spectral",
+  weight: ["400", "500", "600"],
   display: "swap",
 })
 
 export const metadata: Metadata = {
   title: "Volterra - Software Engineering Agency",
   description: "Powerful software solutions from Kigali, Rwanda to the world",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`dark ${playfair.variable} ${inter.variable}`}>
-      <body className={inter.className}>
+    <html lang="en" className={`dark ${cinzel.variable} ${spectral.variable}`}>
+      <body className={spectral.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
@@ -37,7 +37,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'

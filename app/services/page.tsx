@@ -34,36 +34,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services List */}
-      <AnimatedSection>
-        <ServicesList
-          title="WHAT WE OFFER"
-          description="Our team provides a range of services to help businesses leverage technology for growth and innovation."
-          services={[
-            {
-              category: "ARCHITECTURE",
-              title: "System Design & Architecture",
-              description: "Expert system design and architecture services that scale to meet enterprise demands.",
-            },
-            {
-              category: "DEVELOPMENT",
-              title: "Full-Stack Development",
-              description: "End-to-end development with modern technologies and best practices.",
-            },
-            {
-              category: "CLOUD",
-              title: "Cloud Infrastructure",
-              description: "Cloud solutions that give you control over your digital infrastructure.",
-            },
-            {
-              category: "CONSULTING",
-              title: "Technical Consulting",
-              description: "Strategic guidance for your technical challenges and business decisions.",
-            },
-          ]}
-        />
-      </AnimatedSection>
-
       <Separator variant="olympus" />
 
       {/* How We Work Section */}

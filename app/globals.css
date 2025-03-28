@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 .font-serif {
-  font-family: var(--font-playfair), serif;
+  font-family: var(--font-cinzel), serif;
+  letter-spacing: 0.02em;
+}
+
+.font-sans {
+  font-family: var(--font-spectral), serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cinzel), serif;
+}
+
+/* Enhance Greek letter styling */
+.greek-letter {
+  font-family: var(--font-cinzel), serif;
+  font-weight: 700;
 }
 
 /* Lightning animation */
@@ -77,4 +92,3 @@
   --input: 217.2 32.6% 17.5%;
   --ring: 47 95% 67%;
 }
-
