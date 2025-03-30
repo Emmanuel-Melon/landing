@@ -18,7 +18,7 @@ interface ExperienceImpactProps {
 export function ExperienceImpact({
   title = "Experience & Impact",
   description = "We've had the privilege of working with amazing companies and teams, contributing to impactful projects and delivering exceptional software solutions.",
-  badges = ["Since 2022", "3 Countries"],
+  badges = ["Since 2025", "4 Countries"],
   stats = [
     { label: "Years of Experience", value: "5+" },
     { label: "Projects Delivered", value: "4" },
