@@ -4,7 +4,7 @@ const clients = [
   { name: "Life Capsule", location: "Utah, USA" },
   { name: "NotePilot", location: "East Africa" },
   { name: "TradeHub24", location: "London, UK" },
-  { name: "Cookie Club", location: "Kampala, Uganda" },
+  { name: "OpenEval", location: "Texas, USA" },
   { name: "Grace Estates", location: "Kampala, Uganda" },
 ]
 

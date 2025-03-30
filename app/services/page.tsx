@@ -34,16 +34,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <Separator variant="olympus" />
-
       {/* How We Work Section */}
       <AnimatedSection>
         <section id="how-we-work">
           <DualCTA
             primaryButtonText="Start Your Project"
             primaryButtonLink="/contact"
-            secondaryButtonText="View Our Work"
-            secondaryButtonLink="/works"
           />
         </section>
       </AnimatedSection>
